@@ -52,6 +52,9 @@
       <p>Odległość w metrach: {{ result }}</p>
       <p>Odległość w kilometrach: {{ result / 1000 }}</p>
     </div>
+    <div class="large-12 medium-12 small-12 column text-center" v-if="err != 0">
+      <p>Pojawił się błąd: {{ err }}</p>
+    </div>
   </div>
 </template>
 
@@ -70,6 +73,7 @@ export default {
         }
       },
       result: null,
+      err: 0,
       title:
         'Obliczanie odległości pomiędzy dwoma punktami z podanych współrzędnych'
     };
@@ -85,7 +89,11 @@ export default {
           return response.json();
         })
         .then(data => {
-          this.result = data.distance_m;
+          if (!data.status_id) {
+            this.result = data.distance_m;
+          } else {
+            this.err = data.status_id;
+          }
         });
     }
   }

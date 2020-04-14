@@ -19,7 +19,7 @@ header("Access-Control-Allow-Origin: *");
 
   } else {
 
-    echo json_encode(array("status_id" => -1, "message" => "Błąd"));
+    echo json_encode(array("status_id" => -1, "message" => "Błąd przesłanych danych. Danych nie dało się przetworzyć"));
   }
 
 
