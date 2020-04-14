@@ -1,28 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="row">
+      <div class="large-12 medium-12 small-12 column text-center">
+        <h1>Obliczanie odległości pomiędzy dwoma punktami z podanych współrzędnych</h1>
+      </div>
+    </div>
+    <DistanceApp />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Distance from "./components/DistanceApp.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    DistanceApp: Distance
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

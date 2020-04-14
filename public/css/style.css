@@ -1,0 +1,33 @@
+body {
+  background: url(../img/bg.jpg) no-repeat center top transparent;
+  background-size: cover;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: yellowgreen;
+  border: 0;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 25px;
+  height: 30px;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  margin: 150px auto 50px;
+}
+
+p,
+label {
+  font-weight: 600;
+  font-size: 18px;
+}
