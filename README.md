@@ -1,24 +1,7 @@
 # distance-app
 
-## Project setup
-```
-npm install
-```
+Aplikacja stworzona na potrzeby rekrutacji. 
+Obliczanie odległości pomiędzy dwoma punktami po podaniu ich współrzędnych.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Wykorzystano formułę Haversine.
+Obliczenia wykonywane są w php. W fetch podany jest localhost (do ewentualnej zmiany zgodnie z potrzebami).
